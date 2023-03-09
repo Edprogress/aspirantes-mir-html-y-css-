@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Resetear los estilos que le da el navegador */
+}
+
+.container {
+    position: fixed;  /*envoco positiocn fiexde para poder mover al centro su contenedor hijo que tiene como positionamiento absoluto*/
+        background-color:#bd09b7;
+       width: 100%;
+        height: 100%;
+      }
+
+.login_box {
+position: absolute;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+width: 300px;
+height: 300px;
+padding: 20px;
+background-image: linear-gradient(#bd09b7 ,#6b4cf5 );
+border-radius: 20px;
+color: white;
+box-shadow: 7px 7px 15px 20px #b8c0ff  ;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+select{ 
+    padding: 7px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 7px;   
+    }
+
+.cajon {
+    width: 10%;
+    padding: 7px;
+    margin-top:  15px;
+ }
+
+ .textcheck{
+    position: absolute;
+    width: 100%;
+    color: aqua;
+    top: 220px;
+    left: 50px;
+    
+ }
+
+.boton {
+    width:30%;
+    padding: 5px 15px;
+   margin-left: 70%;
+    margin-top: 10px;
+    background-image: linear-gradient(#ef476f,#3a0ca3);
+    color:white;
+    
+}
+
+@media (max-width: 500px){
+    .login_box{ 
+        width: 100%;
+    }
+    .boton{
+   
+    margin-left: 55%;
+    width: 45%;
+    }
+    }
+   
+
+
